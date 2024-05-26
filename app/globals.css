@@ -8,6 +8,7 @@
 .info-container{
     border-radius: 10px;
     margin-inline: 30px !important;
+    width: 100%;
 }
 
 .themen-container{
