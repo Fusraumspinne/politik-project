@@ -1,8 +1,9 @@
 "use client"
 
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import { Button, Offcanvas } from 'react-bootstrap';
+import { Button, Offcanvas, Accordion } from 'react-bootstrap';
 import { useState } from 'react';
+import Image from "next/image"
 
 export default function Dashboard() {
     const [show, setShow] = useState(false);
@@ -46,6 +47,125 @@ export default function Dashboard() {
                         <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-1">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
+                                    <h4 className='mt-3 mb-2'>Die AFD</h4>
+                                    <div className='fs-5'>AFD-Fraktion</div>
+                                    <Accordion defaultActiveKey="0">
+                                        <Accordion.Item eventKey="0">
+                                            <Accordion.Header>Fraktionsvorsitzene</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul className='list-group'>
+                                                    <li className='list-group-item'>
+                                                        <div className='d-flex justify-content-between'>
+                                                            Dr. Alice Weidel
+                                                            <Image src={"/Images/weidel_alice_gross.jpg"} alt="icon" width={35} height={35} style={{ borderRadius: "50%" }} className="me-3" />
+                                                        </div>
+                                                    </li>
+
+                                                    <li className='list-group-item'>
+                                                        <div className='d-flex justify-content-between'>
+                                                            Tino Chrumpalla
+                                                            <Image src={"/Images/chrupalla_tino_gross.jpg"} alt="icon" width={35} height={35} style={{ borderRadius: "50%" }} className="me-3" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="1">
+                                            <Accordion.Header>Erster Parlamenttarischer Geschäftsführer</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul className='list-group'>
+                                                    <li className='list-group-item'>
+                                                        <div className='d-flex justify-content-between'>
+                                                            Dr. Bernd Baumann
+                                                            <Image src={"/Images/baumann_bernd_gross.jpg"} alt="icon" width={35} height={35} style={{ borderRadius: "50%" }} className="me-3" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="2">
+                                            <Accordion.Header>Parlamentarische Geschäftsführer</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul className='list-group'>
+                                                    <li className='list-group-item'>
+                                                        <div className='d-flex justify-content-between'>
+                                                            Stephan Brandner
+                                                            <Image src={"/Images/brandner_stephan_gross.jpg"} alt="icon" width={35} height={35} style={{ borderRadius: "50%" }} className="me-3" />
+                                                        </div>
+                                                    </li>
+                                                    <li className='list-group-item'>
+                                                        <div className='d-flex justify-content-between'>
+                                                            Dr. Götz Frömming
+                                                            <Image src={"/Images/froemming_goetz_gross.jpg"} alt="icon" width={35} height={35} style={{ borderRadius: "50%" }} className="me-3" />
+                                                        </div>
+                                                    </li>
+                                                    <li className='list-group-item'>
+                                                        <div className='d-flex justify-content-between'>
+                                                            Enrico Komning
+                                                            <Image src={"/Images/komning_enrico_gross.jpg"} alt="icon" width={35} height={35} style={{ borderRadius: "50%" }} className="me-3" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="3">
+                                            <Accordion.Header>Stellvertretende Fraktionsvorsitzende</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul className='list-group'>
+                                                    <li className='list-group-item'>
+                                                        <div className='d-flex justify-content-between'>
+                                                            Sebastian Münzenmaier
+                                                            <Image src={"/Images/muenzenmaier_sebastian_gross.jpg"} alt="icon" width={35} height={35} style={{ borderRadius: "50%" }} className="me-3" />
+                                                        </div>
+                                                    </li>
+                                                    <li className='list-group-item'>
+                                                        <div className='d-flex justify-content-between'>
+                                                            Beatrix von Storch
+                                                            <Image src={"/Images/storch_beatrix_gross.jpg"} alt="icon" width={35} height={35} style={{ borderRadius: "50%" }} className="me-3" />
+                                                        </div>
+                                                    </li>
+                                                    <li className='list-group-item'>
+                                                        <div className='d-flex justify-content-between'>
+                                                            Jörn König
+                                                            <Image src={"/Images/koenig_joern_gross.jpg"} alt="icon" width={35} height={35} style={{ borderRadius: "50%" }} className="me-3" />
+                                                        </div>
+                                                    </li>
+                                                    <li className='list-group-item'>
+                                                        <div className='d-flex justify-content-between'>
+                                                            Stefan Keuter
+                                                            <Image src={"/Images/keuter_stefan_gross.jpg"} alt="icon" width={35} height={35} style={{ borderRadius: "50%" }} className="me-3" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                        <Accordion.Item eventKey="4">
+                                            <Accordion.Header>Ehrenvorsitzender</Accordion.Header>
+                                            <Accordion.Body>
+                                                <ul className='list-group'>
+                                                    <li className='list-group-item'>
+                                                        <div className='d-flex justify-content-between'>
+                                                            Dr. Alexander Gauland
+                                                            <Image src={"/Images/gauland_alexander_gross.jpg"} alt="icon" width={35} height={35} style={{ borderRadius: "50%" }} className="me-3" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                    </Accordion>
+                                </div>
+                                <div className='col-2 d-flex justify-content-center align-items-center'>
+                                    <a className="bg-primary item-link" href="#list-item-2"><ArrowDownwardIcon /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-1">
+                            <div className='row bg-body-tertiary info-container'>
+                                <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Geld- und Währungspolitik</h4>
                                     <ul className='list-group'>
                                         <li className='list-group-item'>Euro ist nicht für 20 Volkswirtschaften konstruiert</li>
@@ -58,7 +178,7 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a class="bg-primary item-link" href="#list-item-2"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-2"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
@@ -76,7 +196,7 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a class="bg-primary item-link" href="#list-item-3"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-3"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +214,7 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a class="bg-primary item-link" href="#list-item-4"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-4"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +243,7 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a class="bg-primary item-link" href="#list-item-5"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-5"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +266,7 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a class="bg-primary item-link" href="#list-item-6"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-6"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +290,7 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a class="bg-primary item-link" href="#list-item-7"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-7"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
@@ -200,7 +320,7 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a class="bg-primary item-link" href="#list-item-8"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-8"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +341,7 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a class="bg-primary item-link" href="#list-item-9"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-9"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
@@ -240,7 +360,7 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a class="bg-primary item-link" href="#list-item-10"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-10"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
@@ -256,7 +376,7 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a class="bg-primary item-link" href="#list-item-11"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-11"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
@@ -273,7 +393,7 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a class="bg-primary item-link" href="#list-item-12"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-12"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
