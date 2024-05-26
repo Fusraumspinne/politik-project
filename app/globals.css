@@ -11,6 +11,10 @@
 }
 
 .themen-container{
-    height: 768px;
-    background-color: black;
+    height: 750px;
+    margin-bottom: 1000px;
+}
+
+.more-info{
+    text-decoration: underline;
 }
