@@ -201,6 +201,43 @@ export default function Dashboard() {
                             </div>
                         </div>
 
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-11">
+                            <div className='row bg-body-tertiary info-container'>
+                                <div className='col-10 mb-3'>
+                                    <h4 className='mt-3 mb-2'>Fundamentalistischen Islam</h4>
+                                    <ul className='list-group'>
+                                        <li className='list-group-item'>Der Islam wird nicht nur als Religion betrachtet, sondern auch als Rechts- und Gesellschaftsordnung, die sich nicht mit den europäischen Grundprinzipien von Recht, Freiheit und Demokratie vereinbaren lässt</li>
+                                        <li className='list-group-item'>Migration hat für Integrationsprobleme geführt (Ghettobildung und Kriminalität)</li>
+                                        <li className='list-group-item'>Forderung von strikten Regeln und massiven Beschränkungen für die Zuwanderung in die EU</li>
+                                        <li className='list-group-item'>Vollverschleierung von Frauen soll in der Öffentlichkeit verboten werden</li>
+                                    </ul>
+                                </div>
+                                <div className='col-2 d-flex justify-content-center align-items-center'>
+                                    <a className="bg-primary item-link" href="#list-item-12"><ArrowDownwardIcon /></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-12">
+                            <div className='row bg-body-tertiary info-container'>
+                                <div className='col-10 mb-3'>
+                                    <h4 className='mt-3 mb-2'>Migration</h4>
+                                    <ul className='list-group'>
+                                        <li className='list-group-item'>Betont die Notwendigkeit eines effektiven Außengrenzenschutzes (illegale Einreisen zu verhindern)</li>
+                                        <li className='list-group-item'>Es wird enge Zusammenarbeit bei der heimatnahen Versorgung von Flüchtlingen und beim Aufbau von Schutzzentren gefordert</li>
+                                        <li className='list-group-item'>lehnt die Aufnahme von Drittstaaten (aus Sicht eines völkerrechtlichen Vertrags jeder Staat, der nicht Vertragspartei dieses Vertrags ist.) in die EU ab</li>
+                                        <li className='list-group-item'>fordert verstärkte Zusammenarbeit im Kampf gegen den islamischen Terrorismus und die Radikalisierung von Kindern</li>
+                                        <li className='list-group-item'>lehnt unkontrollierte Masseneinwanderung ab</li>
+                                        <li className='list-group-item'>Beendigung von Schlepperaktivitäten</li>
+                                        <li className='list-group-item'>befürwortet qualifizierte Zuwanderer und lehnt ungelernte Zuwandrer aus Drittstaaten ab</li>
+                                    </ul>
+                                </div>
+                                <div className='col-2 d-flex justify-content-center align-items-center'>
+
+                                </div>
+                            </div>
+                        </div>
+
                         <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-3">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
@@ -325,6 +362,25 @@ export default function Dashboard() {
                             </div>
                         </div>
 
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-9">
+                            <div className='row bg-body-tertiary info-container'>
+                                <div className='col-10 mb-3'>
+                                    <h4 className='mt-3 mb-2'>Familie</h4>
+                                    <ul className='list-group'>
+                                        <li className='list-group-item'>starke Förderung von Familien (Bekämpfung von niedrigen Geburtsraten und Überalterung)</li>
+                                        <li className='list-group-item'>Kritik an EU-Einmischung in nationale Familienpolitik</li>
+                                        <li className='list-group-item'>Ablehnung von Abtreibung außer bei medizinischen Indikationen</li>
+                                        <li className='list-group-item'>Ablehnung von Leihmutterschaft</li>
+                                        <li className='list-group-item'>Ablehnung der Gender-Ideologie (Verbot von „Geschlechtsumwandlung“ von Minderjährigen)</li>
+                                        <li className='list-group-item'>Kritik an der Regelung des Kindergeldes (insbesondere die Zahlungen ins Ausland unabhängig von den Lebensverhältnissen der Kinder)</li>
+                                    </ul>
+                                </div>
+                                <div className='col-2 d-flex justify-content-center align-items-center'>
+                                    <a className="bg-primary item-link" href="#list-item-10"><ArrowDownwardIcon /></a>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-8">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
@@ -346,25 +402,6 @@ export default function Dashboard() {
                             </div>
                         </div>
 
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-9">
-                            <div className='row bg-body-tertiary info-container'>
-                                <div className='col-10 mb-3'>
-                                    <h4 className='mt-3 mb-2'>Familie</h4>
-                                    <ul className='list-group'>
-                                        <li className='list-group-item'>starke Förderung von Familien (Bekämpfung von niedrigen Geburtsraten und Überalterung)</li>
-                                        <li className='list-group-item'>Kritik an EU-Einmischung in nationale Familienpolitik</li>
-                                        <li className='list-group-item'>Ablehnung von Abtreibung außer bei medizinischen Indikationen</li>
-                                        <li className='list-group-item'>Ablehnung von Leihmutterschaft</li>
-                                        <li className='list-group-item'>Ablehnung der Gender-Ideologie (Verbot von „Geschlechtsumwandlung“ von Minderjährigen)</li>
-                                        <li className='list-group-item'>Kritik an der Regelung des Kindergeldes (insbesondere die Zahlungen ins Ausland unabhängig von den Lebensverhältnissen der Kinder)</li>
-                                    </ul>
-                                </div>
-                                <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-10"><ArrowDownwardIcon /></a>
-                                </div>
-                            </div>
-                        </div>
-
                         <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-10">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
@@ -377,43 +414,6 @@ export default function Dashboard() {
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
                                     <a className="bg-primary item-link" href="#list-item-11"><ArrowDownwardIcon /></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-11">
-                            <div className='row bg-body-tertiary info-container'>
-                                <div className='col-10 mb-3'>
-                                    <h4 className='mt-3 mb-2'>Fundamentalistischen Islam</h4>
-                                    <ul className='list-group'>
-                                        <li className='list-group-item'>Der Islam wird nicht nur als Religion betrachtet, sondern auch als Rechts- und Gesellschaftsordnung, die sich nicht mit den europäischen Grundprinzipien von Recht, Freiheit und Demokratie vereinbaren lässt</li>
-                                        <li className='list-group-item'>Migration hat für Integrationsprobleme geführt (Ghettobildung und Kriminalität)</li>
-                                        <li className='list-group-item'>Forderung von strikten Regeln und massiven Beschränkungen für die Zuwanderung in die EU</li>
-                                        <li className='list-group-item'>Vollverschleierung von Frauen soll in der Öffentlichkeit verboten werden</li>
-                                    </ul>
-                                </div>
-                                <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-12"><ArrowDownwardIcon /></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-12">
-                            <div className='row bg-body-tertiary info-container'>
-                                <div className='col-10 mb-3'>
-                                    <h4 className='mt-3 mb-2'>Migration</h4>
-                                    <ul className='list-group'>
-                                        <li className='list-group-item'>Betont die Notwendigkeit eines effektiven Außengrenzenschutzes (illegale Einreisen zu verhindern)</li>
-                                        <li className='list-group-item'>Es wird enge Zusammenarbeit bei der heimatnahen Versorgung von Flüchtlingen und beim Aufbau von Schutzzentren gefordert</li>
-                                        <li className='list-group-item'>lehnt die Aufnahme von Drittstaaten (aus Sicht eines völkerrechtlichen Vertrags jeder Staat, der nicht Vertragspartei dieses Vertrags ist.) in die EU ab</li>
-                                        <li className='list-group-item'>fordert verstärkte Zusammenarbeit im Kampf gegen den islamischen Terrorismus und die Radikalisierung von Kindern</li>
-                                        <li className='list-group-item'>lehnt unkontrollierte Masseneinwanderung ab</li>
-                                        <li className='list-group-item'>Beendigung von Schlepperaktivitäten</li>
-                                        <li className='list-group-item'>befürwortet qualifizierte Zuwanderer und lehnt ungelernte Zuwandrer aus Drittstaaten ab</li>
-                                    </ul>
-                                </div>
-                                <div className='col-2 d-flex justify-content-center align-items-center'>
-
                                 </div>
                             </div>
                         </div>
