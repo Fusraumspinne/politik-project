@@ -10,6 +10,31 @@ export default function Dashboard() {
     const [title, setTitle] = useState("")
     const [content, setContent] = useState("")
 
+    const [fraktionsvorsitzener, setFraktionsvorsitzener] = useState([
+        "Fraktionsvorsitzener",
+        "Ein Fraktionsvorsitzender ist der Leiter einer Gruppe von Abgeordneten im Parlament, die meist derselben Partei angehören und gemeinsame politische Ziele verfolgen."
+    ])
+
+    const [ersterParlamenttarischerGeschäftsführer, setErsterParlamenttarischerGeschäftsführer] = useState([
+        "Erster Parlamenttarischer Geschäftsführer",
+        "Der Erste Parlamentarische Geschäftsführer koordiniert die Arbeit einer Fraktion im Parlament und organisiert die Fraktionssitzungen sowie die parlamentarische Tagesordnung."
+    ])
+
+    const [parlamentarischeGeschäftsführer, setParlamentarischeGeschäftsführer] = useState([
+        "Parlamentarische Geschäftsführer",
+        "Ein Parlamentarischer Geschäftsführer koordiniert die organisatorischen Aufgaben einer Fraktion im Parlament und sorgt für den reibungslosen Ablauf der Fraktionsarbeit."
+    ])
+
+    const [stellvertretendeFraktionsvorsitzende, setStellvertretendeFraktionsvorsitzende] = useState([
+        "Stellvertretende Fraktionsvorsitzende",
+        "Ein stellvertretender Fraktionsvorsitzender unterstützt den Fraktionsvorsitzenden und vertritt ihn bei Abwesenheit, hilft bei der Leitung der Fraktionsarbeit und übernimmt spezielle Aufgaben innerhalb der Fraktion."
+    ])
+
+    const [ehrenvorsitzender, setEhrenvorsitzender] = useState([
+        "Ehrenvorsitzender",
+        "Ein Ehrenvorsitzender ist ein ehemaliger Vorsitzender, der in Anerkennung seiner Verdienste diesen Ehrentitel erhält, aber keine aktive Rolle mehr in der Leitung der Organisation spielt."
+    ])
+
     const [ezb, setEzb] = useState([
         "verbotene Staatsfinanzierung und Planwirtschaft",
         "AFD ist der Ansicht das die EZB verbotene Staatsfinanzierung betreibt, indem sie Anleihen von Staaten aufkauft und Planwirtschaft fördert, indem sie Zinsen manipulieren (stimmt auch im groben (Kauf von Anleihen steigert Inflation von Ländern))"
@@ -28,7 +53,16 @@ export default function Dashboard() {
     const [fitfür55, setFitfür55] = useState([
         "Fit für 55",
         "55% Reduktion der CO2-Emissioen bis 2030"
+    ])
 
+    const [drittstaaten, setDrittstaaten] = useState([
+        "Drittstaaten",
+        "aus Sicht eines völkerrechtlichen Vertrags jeder Staat, der nicht Vertragspartei dieses Vertrags ist"
+    ])
+
+    const [greenDeal, setGreenDeal] = useState([
+        "Green Deal",
+        "Die Green Deal-Strategie der Europäischen Union (EU) zielt auf eine Reduktion von Pflanzenschutzmitteln und Mineraldüngern, fordert mehr Ökolandbau, Maßnahmen zur Verbesserung der Biodiversität und eine erhebliche Minderung der Treibhausgase in der Landwirtschaft."
     ])
 
     const handleClose = () => setShow(false);
@@ -43,15 +77,14 @@ export default function Dashboard() {
         <div>
             <div>
                 <div>
-                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" className="scrollspy-example" tabIndex="0">
                         <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-1">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
-                                    <h4 className='mt-3 mb-2'>Die AFD</h4>
-                                    <div className='fs-5'>AFD-Fraktion</div>
+                                    <h4 className='mt-3 mb-2'>AFD-Fraktion</h4>
                                     <Accordion defaultActiveKey="0">
                                         <Accordion.Item eventKey="0">
-                                            <Accordion.Header>Fraktionsvorsitzene</Accordion.Header>
+                                            <Accordion.Header><span onClick={() => handleShow(fraktionsvorsitzener[0], fraktionsvorsitzener[1])} className='more-info text-primary'>Fraktionsvorsitzene</span></Accordion.Header>
                                             <Accordion.Body>
                                                 <ul className='list-group'>
                                                     <li className='list-group-item'>
@@ -71,7 +104,7 @@ export default function Dashboard() {
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="1">
-                                            <Accordion.Header>Erster Parlamenttarischer Geschäftsführer</Accordion.Header>
+                                            <Accordion.Header><span onClick={() => handleShow(ersterParlamenttarischerGeschäftsführer[0], ersterParlamenttarischerGeschäftsführer[1])} className='more-info text-primary'>Erster Parlamenttarischer Geschäftsführer</span></Accordion.Header>
                                             <Accordion.Body>
                                                 <ul className='list-group'>
                                                     <li className='list-group-item'>
@@ -84,7 +117,7 @@ export default function Dashboard() {
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="2">
-                                            <Accordion.Header>Parlamentarische Geschäftsführer</Accordion.Header>
+                                            <Accordion.Header><span onClick={() => handleShow(parlamentarischeGeschäftsführer[0], parlamentarischeGeschäftsführer[1])} className='more-info text-primary'>Parlamentarische Geschäftsführer</span></Accordion.Header>
                                             <Accordion.Body>
                                                 <ul className='list-group'>
                                                     <li className='list-group-item'>
@@ -109,7 +142,7 @@ export default function Dashboard() {
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="3">
-                                            <Accordion.Header>Stellvertretende Fraktionsvorsitzende</Accordion.Header>
+                                            <Accordion.Header><span onClick={() => handleShow(stellvertretendeFraktionsvorsitzende[0], stellvertretendeFraktionsvorsitzende[1])} className='more-info text-primary'>Stellvertretende Fraktionsvorsitzende</span></Accordion.Header>
                                             <Accordion.Body>
                                                 <ul className='list-group'>
                                                     <li className='list-group-item'>
@@ -140,7 +173,7 @@ export default function Dashboard() {
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="4">
-                                            <Accordion.Header>Ehrenvorsitzender</Accordion.Header>
+                                            <Accordion.Header><span onClick={() => handleShow(ehrenvorsitzender[0], ehrenvorsitzender[1])} className='more-info text-primary'>Ehrenvorsitzender</span></Accordion.Header>
                                             <Accordion.Body>
                                                 <ul className='list-group'>
                                                     <li className='list-group-item'>
@@ -159,11 +192,43 @@ export default function Dashboard() {
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-2">
+                            <div className='row bg-body-tertiary info-container'>
+                                <div className='col-10 mb-3'>
+                                    <h4 className='mt-3 mb-2'>Ziel der AFD</h4>
+                                    <ul className='list-group'>
+                                        <li className='list-group-item'>nüchterner Staatenbund</li>
+                                        <li className='list-group-item'>die Wirschaft soll von politischer Belastung befreit werden</li>
+                                        <li className='list-group-item'>Abbau der Staatsverschuldung</li>
+                                        <li className='list-group-item'>möchte eine Erneuerung des europäischen Gedankens (Europa der Vaterländer)</li>
+                                        <li className='list-group-item'>Förderung von Bildung</li>
+                                    </ul>
+                                </div>
+                                <div className='col-2 d-flex justify-content-center align-items-center'>
+                                    <a className="bg-primary item-link" href="#list-item-3"><ArrowDownwardIcon /></a>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-1">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-3">
+                            <div className='row bg-body-tertiary info-container'>
+                                <div className='col-10 mb-3'>
+                                    <h4 className='mt-3 mb-2'>Kürzliche Änderung aus der rechten ID-Fraktion (Identität und Demokratie)</h4>
+                                    <ul className='list-group'>
+                                        <li className='list-group-item'>Faktion von rechten Parteien (Lega Nord, Rassemblement National)</li>
+                                        <li className='list-group-item'>aufgrundvon den jüngsten Skandalen ist die AFD aus dieser Fraktion rausgeflogen</li>
+                                        <li className='list-group-item'>Hauptgrund ist Maximailian Krah (verharmlosende Aussagen zur SS, Spionageaffäre um einem Mitarbeiter welcher Nähe zu Russland und China hat)</li>
+                                        <li className='list-group-item'>die AFD wollte zuerst Krah aufgeben, sind dann aber doch ganz rausgeflogen</li>
+                                    </ul>
+                                </div>
+                                <div className='col-2 d-flex justify-content-center align-items-center'>
+                                    <a className="bg-primary item-link" href="#list-item-4"><ArrowDownwardIcon /></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-4">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Geld- und Währungspolitik</h4>
@@ -178,12 +243,12 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-2"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-5"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-2">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-5">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Steuern und Finanzen</h4>
@@ -196,12 +261,12 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-3"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-6"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-11">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-6">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Fundamentalistischen Islam</h4>
@@ -213,32 +278,32 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-12"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-7"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-12">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-7">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Migration</h4>
                                     <ul className='list-group'>
-                                        <li className='list-group-item'>Betont die Notwendigkeit eines effektiven Außengrenzenschutzes (illegale Einreisen zu verhindern)</li>
-                                        <li className='list-group-item'>Es wird enge Zusammenarbeit bei der heimatnahen Versorgung von Flüchtlingen und beim Aufbau von Schutzzentren gefordert</li>
-                                        <li className='list-group-item'>lehnt die Aufnahme von Drittstaaten (aus Sicht eines völkerrechtlichen Vertrags jeder Staat, der nicht Vertragspartei dieses Vertrags ist.) in die EU ab</li>
+                                        <li className='list-group-item'>betont die Notwendigkeit eines effektiven Außengrenzenschutzes (illegale Einreisen zu verhindern)</li>
+                                        <li className='list-group-item'>es wird enge Zusammenarbeit bei der heimatnahen Versorgung von Flüchtlingen und beim Aufbau von Schutzzentren gefordert</li>
+                                        <li className='list-group-item'>lehnt die Aufnahme von <span onClick={() => handleShow(drittstaaten[0], drittstaaten[1])} className='more-info text-primary'>Drittstaaten</span> in die EU ab</li>
                                         <li className='list-group-item'>fordert verstärkte Zusammenarbeit im Kampf gegen den islamischen Terrorismus und die Radikalisierung von Kindern</li>
                                         <li className='list-group-item'>lehnt unkontrollierte Masseneinwanderung ab</li>
                                         <li className='list-group-item'>Beendigung von Schlepperaktivitäten</li>
-                                        <li className='list-group-item'>befürwortet qualifizierte Zuwanderer und lehnt ungelernte Zuwandrer aus Drittstaaten ab</li>
+                                        <li className='list-group-item'>befürwortet qualifizierte Zuwanderer und lehnt ungelernte Zuwanderer aus Drittstaaten ab</li>
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-
+                                    <a className="bg-primary item-link" href="#list-item-8"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-3">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-8">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Verteidigungs- und Sicherheitspolitik</h4>
@@ -251,46 +316,43 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-4"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-9"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-4">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-9">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Verkehrspolitik</h4>
                                     <ul className='list-group'>
-                                        <li className='list-group-item'>Verkehrspolitik soll sich an den Bedürfnissen der Bürger orientieren</li>
                                         <li className='list-group-item'>Freiheit der Bürger bei der Wahl des Verkehrsmittels (individuelle Mobilität muss bezahlbar bleiben)</li>
                                         <li className='list-group-item'>Schutz des motorisierten Individualverkehrs (Unterstützung und Förderung)</li>
                                         <li className='list-group-item'>Ablehnung von Dieselverboten und Tempolimits auf Autobahnen</li>
                                         <li className='list-group-item'>Ermöglichen des begleiteten Fahrens ab 16</li>
                                         <li className='list-group-item'>Schließen von Lücken in Autobahnnetzen und Sanierung von Autobahnen und Brücken</li>
                                         <li className='list-group-item'>Forderung nach mehr LKW-Parkplätzen</li>
-                                        <li className='list-group-item'>Entlastung der Bundesautobahnen</li>
-                                        <li className='list-group-item'>Verlagerung des Transit-Güterverkehres auf Schienen und Wasserwege</li>
+                                        <li className='list-group-item'>Entlastung der Bundesautobahnen (Verlagerung des Transit-Güterverkehres auf Schienen und Wasserwege)</li>
                                         <li className='list-group-item'>Sanierung von Schleusen und Wehere (effizienterer Nutzung von Wasserwegen)</li>
                                         <li className='list-group-item'>Europäischer Schienenverkehr (einheitliches europäisches Zugsicherungssystems)</li>
                                         <li className='list-group-item'>Stärkung des Luftverkehrs</li>
                                         <li className='list-group-item'>Abschaffung von Luftverkehrssteuer und unrealistischen EZ-CO2-Reduktionszielen</li>
-                                        <li className='list-group-item'>Ablehnung von Kurzstreckenflugverbot</li>
                                         <li className='list-group-item'>Ablehnung der EU-Einmischung in Antriebstechnologien (Beibehaltung der Verbrenner Motoren)</li>
                                         <li className='list-group-item'>Gleichbehandlung von Fahrzeugen mit synthetischem Kraftstoff und Elektrofahrzeugen</li>
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-5"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-10"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-5">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-10">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Bauen und Wohnen</h4>
                                     <ul className='list-group'>
-                                        <li className='list-group-item'>Erhalt nationaler Baulkultur</li>
+                                        <li className='list-group-item'>erhalt nationaler Baulkultur</li>
                                         <li className='list-group-item'>Ablehnung der EU-Einmischung (Baurecht und Verordnungen sollen ausschließlich in nationaler Zuständigkeit bleiben)</li>
                                         <li className='list-group-item'>Verschärfungen der Baurichtlinien durch die EU werden abgelehnt (führt sonst zu Kosten- Mietssteigerungen)</li>
                                         <li className='list-group-item'>gegen EU-Bestrebung ab 2030 nur noch klimaneutrale Wohnhäuser zu erlauben</li>
@@ -303,17 +365,17 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-6"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-11"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-6">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-11">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Land- und Forstwirtschaft, Naturschutz, Tierwohl, Jagd, Umwelt- und Verbraucherschutz</h4>
                                     <ul className='list-group'>
-                                        <li className='list-group-item'>Ablehnung des „Green Deal“ und der gemeinsamen Agrarpolitik (Förderung regionaler und nationaler Entscheidungsfreiheit)</li>
+                                        <li className='list-group-item'>Ablehnung des <span onClick={() => handleShow(greenDeal[0], greenDeal[1])} className='more-info text-primary'>Green Deal</span> und der gemeinsamen Agrarpolitik (Förderung regionaler und nationaler Entscheidungsfreiheit)</li>
                                         <li className='list-group-item'>Unterstützung kleiner Betriebe (Faire Marktbedingungen)</li>
                                         <li className='list-group-item'>Ablehnung der Umwindung landwirtschaftlicher Flächen für erneuerbare Energie</li>
                                         <li className='list-group-item'>Förderung der nachhaltigen Waldbewirtschaftung und des Waldumbaus</li>
@@ -327,42 +389,38 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-7"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-12"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-7">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-12">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Klima Energie und Digitalisierung</h4>
                                     <ul className='list-group'>
                                         <li className='list-group-item'>Klimaveränderungen sind normal und nicht alarmierend</li>
-                                        <li className='list-group-item'>Anpassung ist der beste Umgang (Verantwortung liegt bei den EU-Nationen)</li>
                                         <li className='list-group-item'>Spezielle Maßnahmen in Deutschland sind unnötig (finanzielle und regulatorische Belastung aufgrund von hypothetischen Zukunftsszenarien sind unvernünftig)</li>
                                         <li className='list-group-item'>Wohlstand und eine starke Wirtschaft sind entscheidend für Reaktion auf klimatische Veränderungen</li>
-                                        <li className='list-group-item'>Ressourcenschonung und geringer Flächenverbrauch im Energiekonzept</li>
                                         <li className='list-group-item'>Ablehnung der Theorie des menschengemachten Klimawandel (politisches Instrument)</li>
                                         <li className='list-group-item'><span onClick={() => handleShow(fitfür55[0], fitfür55[1])} className='more-info text-primary'>Fit für 55</span> soll Wohlstand reduzieren und Freiheit einschränken</li>
-                                        <li className='list-group-item'>Fossile Energieträger werden als Basis des Wohlstands verteidigt</li>
                                         <li className='list-group-item'>Kritik an Wind- und Solarenergie (zu teuer und unzuverlässig)</li>
                                         <li className='list-group-item'>Erdgas, Kernenergie und Kohle</li>
-                                        <li className='list-group-item'>Fordern Abschaffung von Klimaschutzgesetze und Programmen</li>
+                                        <li className='list-group-item'>Fordern Abschaffung von Klimaschutzgesetzen und Programmen</li>
                                         <li className='list-group-item'>Aufhebung der Subvention für Solar- und Windenergie</li>
                                         <li className='list-group-item'>Förderung von Kernenergieforschung und Wiederaufnahme der Stromproduktion in stillgelegten Kernkraftwerken</li>
-                                        <li className='list-group-item'>Ablehnung der Digitalisierungsverordnungen der EU</li>
                                         <li className='list-group-item'>Schutz der Freiheitsrechte im Internet</li>
                                         <li className='list-group-item'>Förderung von europäischer und quelloffener Software</li>
                                         <li className='list-group-item'>Erhalt des Bargelds und das Recht auf ein analoges Leben ohne digitale Identität</li>
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-8"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-13"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-9">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-13">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Familie</h4>
@@ -371,17 +429,17 @@ export default function Dashboard() {
                                         <li className='list-group-item'>Kritik an EU-Einmischung in nationale Familienpolitik</li>
                                         <li className='list-group-item'>Ablehnung von Abtreibung außer bei medizinischen Indikationen</li>
                                         <li className='list-group-item'>Ablehnung von Leihmutterschaft</li>
-                                        <li className='list-group-item'>Ablehnung der Gender-Ideologie (Verbot von „Geschlechtsumwandlung“ von Minderjährigen)</li>
+                                        <li className='list-group-item'>Ablehnung der Gender-Ideologie (Verbot von Geschlechtsumwandlung von Minderjährigen)</li>
                                         <li className='list-group-item'>Kritik an der Regelung des Kindergeldes (insbesondere die Zahlungen ins Ausland unabhängig von den Lebensverhältnissen der Kinder)</li>
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-10"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-14"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-8">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-14">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Gesundheitspolitik</h4>
@@ -397,12 +455,12 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-9"><ArrowDownwardIcon /></a>
+                                    <a className="bg-primary item-link" href="#list-item-15"><ArrowDownwardIcon /></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-10">
+                        <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-15">
                             <div className='row bg-body-tertiary info-container'>
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Bildung</h4>
@@ -413,7 +471,7 @@ export default function Dashboard() {
                                     </ul>
                                 </div>
                                 <div className='col-2 d-flex justify-content-center align-items-center'>
-                                    <a className="bg-primary item-link" href="#list-item-11"><ArrowDownwardIcon /></a>
+
                                 </div>
                             </div>
                         </div>
