@@ -80,6 +80,7 @@ export default function Dashboard() {
                     <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" className="scrollspy-example" tabIndex="0">
                         <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-1">
                             <div className='row bg-body-tertiary info-container'>
+                                <Image src={"/Images/logo.jpg"} alt="icon" width={1000} height={1000} className='logo-img'/> 
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>AFD-Fraktion</h4>
                                     <Accordion defaultActiveKey="0">
@@ -195,6 +196,7 @@ export default function Dashboard() {
 
                         <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-2">
                             <div className='row bg-body-tertiary info-container'>
+                                <Image src={"/Images/afdziele.jpg"} alt="icon" width={1000} height={1000} className='logo-img'/> 
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Ziel der AFD</h4>
                                     <ul className='list-group'>
@@ -213,8 +215,9 @@ export default function Dashboard() {
 
                         <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-3">
                             <div className='row bg-body-tertiary info-container'>
+                                <Image src={"/Images/id.png"} alt="icon" width={1000} height={1000} className='logo-img' style={{transform: 'translateX(366%) translateY(20%)', height:"50px"}}/> 
                                 <div className='col-10 mb-3'>
-                                    <h4 className='mt-3 mb-2'>Kürzliche Änderung aus der rechten ID-Fraktion (Identität und Demokratie)</h4>
+                                    <h4 className='mt-3 mb-2'>Kürzliche Änderung aus der rechten ID-Fraktion</h4>
                                     <ul className='list-group'>
                                         <li className='list-group-item'>Faktion von rechten Parteien (Lega Nord, Rassemblement National)</li>
                                         <li className='list-group-item'>aufgrundvon den jüngsten Skandalen ist die AFD aus dieser Fraktion rausgeflogen</li>
