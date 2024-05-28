@@ -215,7 +215,7 @@ export default function Dashboard() {
 
                         <div className='themen-container d-flex justify-content-center align-items-center' id="list-item-3">
                             <div className='row bg-body-tertiary info-container'>
-                                <Image src={"/Images/id.png"} alt="icon" width={1000} height={1000} className='logo-img' style={{transform: 'translateX(366%) translateY(20%)', height:"50px"}}/> 
+                                <Image src={"/Images/id.png"} alt="icon" width={1000} height={1000} className='logo-img' style={{transform: 'translateX(376%) translateY(20%)', height:"50px"}}/> 
                                 <div className='col-10 mb-3'>
                                     <h4 className='mt-3 mb-2'>Kürzliche Änderung aus der rechten ID-Fraktion</h4>
                                     <ul className='list-group'>
