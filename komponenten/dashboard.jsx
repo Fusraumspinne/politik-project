@@ -37,7 +37,7 @@ export default function Dashboard() {
 
     const [ezb, setEzb] = useState([
         "verbotene Staatsfinanzierung und Planwirtschaft",
-        "AFD ist der Ansicht das die EZB verbotene Staatsfinanzierung betreibt, indem sie Anleihen von Staaten aufkauft und Planwirtschaft fördert, indem sie Zinsen manipulieren (stimmt auch im groben (Kauf von Anleihen steigert Inflation von Ländern))"
+        "AFD ist der Ansicht das die EZB verbotene Staatsfinanzierung betreibt, indem sie Anleihen von Staaten aufkauft und Planwirtschaft fördert, indem sie Zinsen manipulieren (Kauf von Anleihen steigert Inflation von Ländern)"
     ]);
 
     const [bruttonationaleinkommens, setBruttonationaleinkommens] = useState([
@@ -441,7 +441,7 @@ export default function Dashboard() {
                                     <h4 className='mt-3 mb-2'>AFD-Fraktion</h4>
                                     <Accordion defaultActiveKey="0">
                                         <Accordion.Item eventKey="0">
-                                            <Accordion.Header><span onClick={() => handleShow(fraktionsvorsitzener[0], fraktionsvorsitzener[1])} className='more-info text-primary'>Fraktionsvorsitzene</span></Accordion.Header>
+                                            <Accordion.Header><span onClick={() => handleShow(fraktionsvorsitzener[0], fraktionsvorsitzener[1])} className='more-info text-primary'>Fraktionsvorsitzende</span></Accordion.Header>
                                             <Accordion.Body>
                                                 <ul className='list-group'>
                                                     <li className='list-group-item'>
@@ -693,7 +693,7 @@ export default function Dashboard() {
                                         <li className='list-group-item'>Sanierung von Schleusen und Wehere (effizienterer Nutzung von Wasserwegen)</li>
                                         <li className='list-group-item'>Europäischer Schienenverkehr (einheitliches europäisches Zugsicherungssystems)</li>
                                         <li className='list-group-item'>Stärkung des Luftverkehrs</li>
-                                        <li className='list-group-item'>Abschaffung von Luftverkehrssteuer und unrealistischen EZ-CO2-Reduktionszielen</li>
+                                        <li className='list-group-item'>Abschaffung von Luftverkehrssteuer und unrealistischen CO2-Reduktionszielen</li>
                                         <li className='list-group-item'>Ablehnung der EU-Einmischung in Antriebstechnologien (Beibehaltung der Verbrenner Motoren)</li>
                                         <li className='list-group-item'>Gleichbehandlung von Fahrzeugen mit synthetischem Kraftstoff und Elektrofahrzeugen</li>
                                     </ul>
