@@ -85,7 +85,7 @@ export default function Dashboard() {
                                     <h4 className='mt-3 mb-2'>AFD-Fraktion</h4>
                                     <Accordion defaultActiveKey="0">
                                         <Accordion.Item eventKey="0">
-                                            <Accordion.Header><span onClick={() => handleShow(fraktionsvorsitzener[0], fraktionsvorsitzener[1])} className='more-info text-primary'>Fraktionsvorsitzene</span></Accordion.Header>
+                                            <Accordion.Header><span onClick={() => handleShow(fraktionsvorsitzener[0], fraktionsvorsitzener[1])} className='more-info text-primary'>Fraktionsvorsitzende</span></Accordion.Header>
                                             <Accordion.Body>
                                                 <ul className='list-group'>
                                                     <li className='list-group-item'>
