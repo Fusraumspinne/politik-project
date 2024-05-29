@@ -37,7 +37,7 @@ export default function Dashboard() {
 
     const [ezb, setEzb] = useState([
         "verbotene Staatsfinanzierung und Planwirtschaft",
-        "AFD ist der Ansicht das die EZB verbotene Staatsfinanzierung betreibt, indem sie Anleihen von Staaten aufkauft und Planwirtschaft fördert, indem sie Zinsen manipulieren (stimmt auch im groben (Kauf von Anleihen steigert Inflation von Ländern))"
+        "AFD ist der Ansicht das die EZB verbotene Staatsfinanzierung betreibt, indem sie Anleihen von Staaten aufkauft und Planwirtschaft fördert, indem sie Zinsen manipulieren (Kauf von Anleihen steigert Inflation von Ländern)"
     ]);
 
     const [bruttonationaleinkommens, setBruttonationaleinkommens] = useState([
