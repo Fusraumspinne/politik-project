@@ -339,7 +339,7 @@ export default function Dashboard() {
                                         <li className='list-group-item'>Sanierung von Schleusen und Wehere (effizienterer Nutzung von Wasserwegen)</li>
                                         <li className='list-group-item'>Europäischer Schienenverkehr (einheitliches europäisches Zugsicherungssystems)</li>
                                         <li className='list-group-item'>Stärkung des Luftverkehrs</li>
-                                        <li className='list-group-item'>Abschaffung von Luftverkehrssteuer und unrealistischen EZ-CO2-Reduktionszielen</li>
+                                        <li className='list-group-item'>Abschaffung von Luftverkehrssteuer und unrealistischen CO2-Reduktionszielen</li>
                                         <li className='list-group-item'>Ablehnung der EU-Einmischung in Antriebstechnologien (Beibehaltung der Verbrenner Motoren)</li>
                                         <li className='list-group-item'>Gleichbehandlung von Fahrzeugen mit synthetischem Kraftstoff und Elektrofahrzeugen</li>
                                     </ul>
